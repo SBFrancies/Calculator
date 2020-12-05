@@ -38,7 +38,7 @@ Example:
 
 1) Add StyleCop or some other static code analysis tool.
 
-2) Alter the class `CalculationFactory` so that rather than simply returning a function it returns an implementation of some `IOperation` interface. This would more nicely seperate the logic for the calculation out from the factory class itself and would allow for neater code if more complex calculation options were added in the future. On balance, given the simplicy of the calculations involved I decided this approach was not neccessary at this stage.
+2) Alter the class `CalculationFactory` so that rather than simply returning a function it returns an implementation of some `IOperation` interface. This would more nicely seperate the logic for the calculation out from the factory class itself and would allow for neater code if more complex calculation options were added in the future. On balance, given the simplicity of the calculations involved I decided this approach was not neccessary at this stage.
 
 3) Support other types of numeric data rather than just ints.
 
