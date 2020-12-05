@@ -7,6 +7,9 @@ using System.Text;
 
 namespace Calculator.Calculation
 {
+    /// <summary>
+    /// This class performs the calculations in the specified file.
+    /// </summary>
     public class CalculationEngine : ICalculationEngine
     {
         private readonly ICalculationFactory calculationFactory;
@@ -27,6 +30,11 @@ namespace Calculator.Calculation
             this.instructionMapper = instructionMapper ?? throw new ArgumentNullException(nameof(instructionMapper));
         }
 
+        /// <summary>
+        /// Perform the calculations in a given file.
+        /// </summary>
+        /// <param name="filePath">The path to the file containing the calculations.</param>
+        /// <returns>The result of the calculations.</returns>
         public int CalculateResult(string filePath)
         {
             var lines = this.fileReader.GetFileLines(filePath);

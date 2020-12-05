@@ -8,8 +8,16 @@ using System.Text.RegularExpressions;
 
 namespace Calculator.Validation
 {
+    /// <summary>
+    /// Used to validate a provided instruction string.
+    /// </summary>
     public class InstructionValidator : IInstructionValidator
     {
+        /// <summary>
+        /// Tests if all the instructions in the provided collection of strings are valid.
+        /// </summary>
+        /// <param name="instructions">The collection of instructions.</param>
+        /// <returns>Whether all the provided instructions are valid.</returns>
         public bool ValidInstructions(IList<string> instructions)
         {
             if(instructions == null)
