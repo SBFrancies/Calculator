@@ -2,7 +2,7 @@
 
 ## Description
 
-A Console application that the result of inputted mathematical operations.
+A Console application that outputs the result of inputted mathematical operations.
 
 ## Requirements to run
 
