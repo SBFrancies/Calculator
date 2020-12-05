@@ -51,8 +51,8 @@ namespace Calculator.Calculation
 
             foreach (var instruction in instructions.Take(instructions.Count() - 1))
             {
-                var func = this.calculationFactory.GetCalculation(instruction.Operation);
-                value = func(value, instruction.Value);
+                var operation = this.calculationFactory.GetCalculation(instruction.Operation);
+                value = operation.Calculate(value, instruction.Value);
             }
 
             return value;

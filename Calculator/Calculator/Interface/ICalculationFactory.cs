@@ -7,6 +7,6 @@ namespace Calculator.Interface
 {
     public interface ICalculationFactory
     {
-        Func<int, int, int> GetCalculation(Operation operation);
+        IOperation GetCalculation(Operation operation);
     }
 }
